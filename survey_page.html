@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/survey_css.css">
+    <title>Cars Survey</title>
+</head>
+<body>
+    <form action="submit_survey.php" method="post">
+      <label for="personalInformation">personal information</label>
+        <div id="personalInformation">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required><br>
+
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required><br>
+        
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br>
+        
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required><br>
+        </div>
+        <br><br>
+        <label for="selectDiv">Questions about your favourite car</label>
+        <div class="selectDiv">
+          <label for="bodyTypeQuestion">What is your preferred body type?</label><br>
+          <input type="radio" name="bodyTypeAnswer" id="bodyTypeSedan" value="sedan" checked>
+          <label for="bodyTypeSedan">sedan 
+          <img src="https://bit.ly/3q7LuMh" alt="sedan"></label>
+          
+          <input type="radio" name="bodyTypeAnswer" id="bodyTypeSuv" value="suv">
+          <label for="bodyTypeSuv">suv 
+            <img src="https://bit.ly/3osvNPB" alt="suv"></label> 
+            <br>
+          
+          <input type="radio" name="bodyTypeAnswer" id="bodyTypeCoupe" value="coupe">
+          <label for="bodyTypeCoupe">coupe <img src="https://bit.ly/3WIAWzG" alt="coupe"></label>
+          
+
+          <input type="radio" name="bodyTypeAnswer" id="bodyTypeHatchback" value="hatchback">
+          <label for="bodyTypeHatchback">hatchback <img src="https://bit.ly/3MYcTcu" 
+            alt="hatchback"></label>  
+        </div>
+        
+         
+            
+      <br><br>
+      <div class="selectDiv">
+        <label for="favouriteSpeedQuestion">What is your favourite driving speed?</label>
+        <input type="radio" name="favouriteSpeedAnswer" value="city driving" checked> city driving
+        <input type="radio" name="favouriteSpeedAnswer" value="highway driving"> highway driving
+        <input type="radio" name="favouriteSpeedAnswer" value="off-road driving"> off-road driving
+        <input type="radio" name="favouriteSpeedAnswer" value="racing"> racing
+      </div>
+      <br>
+      <br>
+      <div class="selectDiv">
+        <label for="costRangeQuestion">What is your budget for a car?</label>
+        from <input type="number" name="costRangeMinAnswer"min="0" placeholder="Min" required>
+        <br>
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        to <input type="number" name="costRangeMaxAnswer" min="0" placeholder="Max" required>
+      </div>
+      <br>
+      <br>
+      <div class="selectDiv">
+        <label for="carSafetyQuestion">How important is car safety to you?</label>
+        <select name="carSafetyAnswer" id="carSafetyAnswer">
+          <option value="very important" selected>very important</option>
+          <option value="somewhat important">somewhat important</option>
+          <option value="not important">not important</option>
+        </select>
+      </div>
+      <br>
+      <br>
+      <div class="selectDiv">
+        <label for="carFunctionalityQuestion">What is the primary use of your car?</label>
+        <input type="radio" name="carFunctionalityAnswer" value="family car" checked> family car
+        <input type="radio" name="carFunctionalityAnswer" value="joyriding"> joyriding
+        <input type="radio" name="carFunctionalityAnswer" value="luxury"> luxury
+        <input type="radio" name="carFunctionalityAnswer" value="maneuvers"> maneuvers
+      </div>
+      <br>
+      <br>
+      
+      <div class="selectDiv">
+        <label for="fuelConsumptionQuestion">How important is fuel consumption to you?</label>
+        <select name="fuelConsumptionAnswer" id="fuelConsumptionAnswer">
+          <option value="very important" >very important</option>
+          <option value="somewhat important">somewhat important</option>
+          <option value="not important">not important</option>
+        </select>
+      </div>
+      <br>
+      <br>
+      <div class="selectDiv">
+        <label for="carTechnologyQuestion">What is the level of car technology do you prefer?</label>
+        <select name="carTechnologyAnswer" id="carTechnologyAnswer">
+          <option value="very important" >very important</option>
+          <option value="somewhat important">somewhat important</option>
+          <option value="not important">not important</option>
+        </select>
+      </div>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

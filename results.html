@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="css/results_css.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     
+</head>
+<body>
+    
+    <div id="chartDiv">
+        <canvas id="myChart"></canvas>
+    </div>
+    <div id="charachteristicChoicesDiv">
+        <label for="charachteristicChoices">select the charachteristic of a car to view its results</label>
+        <select id="charachteristicChoices" onchange="charachteristicChanged()">
+            <option value="body" selected>body</option>
+            <option value="speed">speed</option>
+            <option value="cost">cost</option>
+            <option value="safety">safety</option>
+            <option value="functionality">functionality</option>
+            <option value="fuel">fuel</option>
+            <option value="technology">technology</option>
+        </select>
+    </div>
+
+    <div id="typeChoicesDiv">
+        <label for="typeChoices">select the type of a charachteristic to view its results</label>
+        <select id="typeChoices" onchange="typeChanged()">
+        </select>
+    </div>
+    <script src="javascript/javascript.js"></script>
+    
+</body>
+</html>

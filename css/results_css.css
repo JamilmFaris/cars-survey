@@ -1,0 +1,20 @@
+#chartDiv{
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+#charachteristicChoicesDiv{
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#typeChoicesDiv{
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+label{
+    display: block;
+}
